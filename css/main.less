@@ -1,3 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic);
+
+
+@color-blue       : #0068b1;
+@color-dark-blue  : #01518a;
+@color-gray       : #666666;
+@color-light-gray : #999999;
+@color-dark-gray  : #333333;
+
+@font-base        : 'Ubuntu', sans-serif;
+@font-head        : 'Cuprum', sans-serif;
+
+
 /* Base styles
    ======================== */
 
@@ -12,12 +26,12 @@ button,
 input,
 select,
 textarea {
-	color: #222;
+	color: @color-gray;
 }
 
 html {
-	font-size: 1em;
-	line-height: 1.4;
+	font-size: 13px;
+	line-height: 1.307;
 }
 
 hr {
@@ -30,7 +44,7 @@ hr {
 }
 
 .container {
-	width: 1024px;
+	width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -41,9 +55,46 @@ hr {
 /* Typography
    ========================= */
 
-h1, h2, h3, h4 {
-
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	font-family: @font-head;
 }
+
+h1 {
+	font-size: 36px;
+	color: @color-blue;
+}
+
+h2 {
+	font-size: 30px;
+	color: @color-blue;
+}
+
+h3 {
+	font-size: 24px;
+	color: @color-blue;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 24px;
+	color: @color-light-gray;
+}
+
+h5 {
+	font-size: 20px;
+	color: @color-dark-blue;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 16px;
+	color: @color-dark-blue;
+	text-transform: uppercase;
+}
+
 
 p {
 	padding: 0;
@@ -54,10 +105,15 @@ a {
 
 }
 
-nav ul {
+ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	li {
+		padding-left: 15px;
+		background: url("../img/list-marker.png") 0% 5px no-repeat;
+	}
 }
 
 

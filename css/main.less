@@ -631,8 +631,21 @@ hr {
 		padding: 30px 35px;
 	}
 
-}
+	.form .form-horizontal {
 
+		textarea,
+		input[type="tel"],
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			width: 300px;
+		}
+
+		label {
+			color: @color-dark-gray;
+		}
+	}
+}
 
 .sidebar {
 	float: left;
@@ -645,10 +658,43 @@ hr {
 	}
 }
 
-.content {
+
+/* Content */
+
+.content-right {
 	float: right;
 	width: 820px;
 	min-height: 1px;
+}
+
+.content {
+	margin-right: 10px;
+}
+
+.features-services {
+	padding: 25px 30px;
+	margin-bottom: 23px;
+	border: 2px solid @color-blue;
+}
+
+.request {
+	padding: 40px;
+	height: 303px;
+	background: url("../img/bg-request.jpg") top center no-repeat;
+
+	h2 {
+		float: left;
+		width: 250px;
+	}
+	.request-form {
+		float: right;
+		width: 460px;
+	}
+
+	.form .form-horizontal label {
+		width: 80px;
+		margin-right: 0;
+	}
 }
 
 
@@ -748,6 +794,50 @@ blockquote:after {
 		margin-bottom: 20px;
 	}
 
+	.form-horizontal {
+
+		textarea,
+		input[type="tel"],
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			float: left;
+			width: 380px;
+		}
+
+		label {
+			float: left;
+			width: 100px;
+			min-height: 1px;
+			margin-right: 10px;
+		}
+	}
+
+	.form-inline {
+
+		textarea,
+		input[type="tel"],
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			float: right;
+			width: 265px;
+		}
+
+		label {
+			width: 140px;
+			margin-right: 0;
+		}
+
+		.btn-color {
+			float: left;
+		}
+
+		.btn-gray {
+			float: right;
+		}
+	}
+
 	textarea,
 	input[type="tel"],
 	input[type="text"],
@@ -802,52 +892,10 @@ blockquote:after {
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 44px;
-		color: @color-dark-gray;
+		color: @color-blue;
 	}
 }
 
-.form.form-horizontal {
-
-	textarea,
-	input[type="tel"],
-	input[type="text"],
-	input[type="email"],
-	input[type="password"] {
-		float: left;
-		width: 300px;
-	}
-
-	label {
-		float: left;
-		width: 100px;
-		margin-right: 10px;
-	}
-
-	.form-inline {
-
-		textarea,
-		input[type="tel"],
-		input[type="text"],
-		input[type="email"],
-		input[type="password"] {
-			float: right;
-			width: 265px;
-		}
-
-		label {
-			width: 140px;
-			margin-right: 0;
-		}
-
-		.btn-color {
-			float: left;
-		}
-
-		.btn-gray {
-			float: right;
-		}
-	}
-}
 
 
 /* Buttons */
@@ -1047,7 +1095,6 @@ h6 {
 	text-transform: uppercase;
 }
 
-
 p {
 	padding: 0;
 	margin: 0 0 20px 0;
@@ -1060,6 +1107,11 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+.img-left {
+	float: left;
+	margin: 0 30px 30px 0;
 }
 
 /* Списки */

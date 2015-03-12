@@ -537,6 +537,16 @@ hr {
 .modal-box .modal-body {
   padding: 30px 35px;
 }
+.modal-box .form .form-horizontal textarea,
+.modal-box .form .form-horizontal input[type="tel"],
+.modal-box .form .form-horizontal input[type="text"],
+.modal-box .form .form-horizontal input[type="email"],
+.modal-box .form .form-horizontal input[type="password"] {
+  width: 300px;
+}
+.modal-box .form .form-horizontal label {
+  color: #333333;
+}
 .sidebar {
   float: left;
   width: 330px;
@@ -545,10 +555,36 @@ hr {
 .sidebar .box {
   margin-bottom: 20px;
 }
-.content {
+/* Content */
+.content-right {
   float: right;
   width: 820px;
   min-height: 1px;
+}
+.content {
+  margin-right: 10px;
+}
+.features-services {
+  padding: 25px 30px;
+  margin-bottom: 23px;
+  border: 2px solid #0068b1;
+}
+.request {
+  padding: 40px;
+  height: 303px;
+  background: url("../img/bg-request.jpg") top center no-repeat;
+}
+.request h2 {
+  float: left;
+  width: 250px;
+}
+.request .request-form {
+  float: right;
+  width: 460px;
+}
+.request .form .form-horizontal label {
+  width: 80px;
+  margin-right: 0;
 }
 /* Quotes */
 blockquote {
@@ -634,6 +670,38 @@ blockquote:after {
   position: relative;
   margin-bottom: 20px;
 }
+.form .form-horizontal textarea,
+.form .form-horizontal input[type="tel"],
+.form .form-horizontal input[type="text"],
+.form .form-horizontal input[type="email"],
+.form .form-horizontal input[type="password"] {
+  float: left;
+  width: 380px;
+}
+.form .form-horizontal label {
+  float: left;
+  width: 100px;
+  min-height: 1px;
+  margin-right: 10px;
+}
+.form .form-inline textarea,
+.form .form-inline input[type="tel"],
+.form .form-inline input[type="text"],
+.form .form-inline input[type="email"],
+.form .form-inline input[type="password"] {
+  float: right;
+  width: 265px;
+}
+.form .form-inline label {
+  width: 140px;
+  margin-right: 0;
+}
+.form .form-inline .btn-color {
+  float: left;
+}
+.form .form-inline .btn-gray {
+  float: right;
+}
 .form textarea,
 .form input[type="tel"],
 .form input[type="text"],
@@ -683,38 +751,7 @@ blockquote:after {
   font-size: 13px;
   font-weight: 400;
   line-height: 44px;
-  color: #333333;
-}
-.form.form-horizontal textarea,
-.form.form-horizontal input[type="tel"],
-.form.form-horizontal input[type="text"],
-.form.form-horizontal input[type="email"],
-.form.form-horizontal input[type="password"] {
-  float: left;
-  width: 300px;
-}
-.form.form-horizontal label {
-  float: left;
-  width: 100px;
-  margin-right: 10px;
-}
-.form.form-horizontal .form-inline textarea,
-.form.form-horizontal .form-inline input[type="tel"],
-.form.form-horizontal .form-inline input[type="text"],
-.form.form-horizontal .form-inline input[type="email"],
-.form.form-horizontal .form-inline input[type="password"] {
-  float: right;
-  width: 265px;
-}
-.form.form-horizontal .form-inline label {
-  width: 140px;
-  margin-right: 0;
-}
-.form.form-horizontal .form-inline .btn-color {
-  float: left;
-}
-.form.form-horizontal .form-inline .btn-gray {
-  float: right;
+  color: #0068b1;
 }
 /* Buttons */
 .btn {
@@ -959,6 +996,10 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+.img-left {
+  float: left;
+  margin: 0 30px 30px 0;
 }
 /* Списки */
 ul {

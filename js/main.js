@@ -31,11 +31,11 @@ customer.owlCarousel({
     items: 3
 });
 
-$('.next').click(function() {
+$('.customer-next').click(function() {
     customer.trigger('next.owl.carousel');
 });
 
-$('.prev').click(function() {
+$('.customer-prev').click(function() {
     customer.trigger('prev.owl.carousel');
 });
 

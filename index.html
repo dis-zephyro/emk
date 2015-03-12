@@ -16,6 +16,15 @@
         <link rel="stylesheet/less" href="css/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .btn-color {
+                filter: none;
+            }
+        </style>
+        <![endif]-->
+
     </head>
     
     <body>
@@ -53,7 +62,7 @@
                 </ul>
                 <div class="top-search-inner">
                     <div class="top-search clearfix">
-                        <input type="text" name="search" value="Поиск по сайту" maxlength="50" onfocus="if (this.value=='Search...') this.value='';"/>
+                        <input type="text" name="search" value="Поиск по сайту" maxlength="50" onfocus="if (this.value=='Поиск по сайту') this.value='';"/>
                         <button type="submit" class="btn-search"></button>
                     </div>
                 </div>
@@ -147,8 +156,8 @@
                             <li><img src="images/customers03.jpg" alt="customer3"></li>
                             <li><img src="images/customers02.jpg" alt="customer2"></li>
                         </ul>
-                        <span class="customer-nav prev ir">Назад</span>
-                        <span class="customer-nav next ir">Вперед</span>
+                        <span class="btn-nav-small prev ir customer-prev ">Назад</span>
+                        <span class="btn-nav-small next ir customer-next">Вперед</span>
                     </div>
                 </article>
             </div>

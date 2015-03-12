@@ -39,4 +39,11 @@ $('.customer-prev').click(function() {
     customer.trigger('prev.owl.carousel');
 });
 
+$(".callback, .remind, .enter").fancybox({
+    "padding" : 0,
+    'closeBtn' : false
+});
 
+$('.modal-close, .modal-body button[type="reset"]').click(function(){
+    $.fancybox.close();
+});

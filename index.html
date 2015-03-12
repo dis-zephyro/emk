@@ -19,7 +19,8 @@
 
         <!--[if gte IE 9]>
         <style type="text/css">
-            .btn-color {
+            .btn.btn-gray,
+            .btn.btn-color {
                 filter: none;
             }
         </style>
@@ -185,6 +186,77 @@
                 </ul>
             </div>
         </footer>
+
+        <div class="hidden">
+            <div class="modal-box" id="callback">
+                <div class="modal-title">
+                    Напишите нам
+                    <span class="modal-close"></span>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-horizontal">
+                        <div class="form-group">
+                            <label>Ваше имя:</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Ваш телефон:</label>
+                            <input type="text" name="tel">
+                        </div>
+                        <div class="form-group">
+                            <label>Сообщение:</label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-color">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-box" id="remind-password">
+                <div class="modal-title">
+                    Забыли пароль?
+                    <span class="modal-close"></span>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-horizontal">
+                        <div class="form-group form-inline">
+                            <label>Укажите Ваш email:</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-inline">
+                            <button type="submit" class="btn btn-color">Напомнить пароль</button>
+                            <button type="reset" class="btn btn-gray">отмена</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-box" id="enter">
+                <div class="modal-title">
+                    Напишите нам
+                    <span class="modal-close"></span>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-horizontal">
+                        <div class="form-group">
+                            <label>Ваш email:</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль:</label>
+                            <input type="password" name="pass">
+                        </div>
+                        <div class="form-group">
+                            <a href="#remind-password" class="remind">Напомнить пароль</a>
+                        </div>
+                        <div class="form-inline">
+                            <button type="submit" class="btn btn-color">Войти на сайт</button>
+                            <button type="reset" class="btn btn-gray">отмена</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

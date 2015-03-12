@@ -575,8 +575,6 @@ hr {
 	}
 }
 
-.main {}
-
 .breadcrumbs {
 	height: 52px;
 	margin-bottom: 20px;
@@ -603,6 +601,38 @@ hr {
 		color: @color-blue;
 	}
 }
+
+.modal-box {
+	width: 480px;
+	background: #fff;
+
+	.modal-title {
+		color: #fff;
+		height: 67px;
+		padding: 0 30px;
+		font-size: 24px;
+		line-height: 67px;
+		position: relative;
+		background: @color-blue;
+		font-family: @font-head;
+
+		.modal-close {
+			top: 22px;
+			right: 22px;
+			width: 16px;
+			height: 16px;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/modal-close.png") 0 0 no-repeat;
+		}
+	}
+
+	.modal-body {
+		padding: 30px 35px;
+	}
+
+}
+
 
 .sidebar {
 	float: left;
@@ -774,8 +804,6 @@ blockquote:after {
 		line-height: 44px;
 		color: @color-dark-gray;
 	}
-
-
 }
 
 .form.form-horizontal {
@@ -793,6 +821,31 @@ blockquote:after {
 		float: left;
 		width: 100px;
 		margin-right: 10px;
+	}
+
+	.form-inline {
+
+		textarea,
+		input[type="tel"],
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			float: right;
+			width: 265px;
+		}
+
+		label {
+			width: 140px;
+			margin-right: 0;
+		}
+
+		.btn-color {
+			float: left;
+		}
+
+		.btn-gray {
+			float: right;
+		}
 	}
 }
 
@@ -1002,11 +1055,11 @@ p {
 
 a {
 	color: @color-orange;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* Списки */
@@ -1148,6 +1201,10 @@ ol {
 
 .clearfix:before,
 .clearfix:after,
+.form-inline:before,
+.form-inline:after,
+.form-group:before,
+.form-group:after,
 .container:before,
 .container:after {
 	content: " "; /* 1 */
@@ -1155,11 +1212,15 @@ ol {
 }
 
 .clearfix:after,
+.form-inline:after,
+.form-group:after,
 .container:after {
 	clear: both;
 }
 
 .clearfix,
+.form-group,
+.form-inline,
 .container {
 	*zoom: 1;
 }

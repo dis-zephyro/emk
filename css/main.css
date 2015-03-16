@@ -567,6 +567,27 @@ hr {
   width: 340px;
   min-height: 1px;
 }
+.sidenav {
+  margin-bottom: 30px;
+}
+.sidenav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidenav ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Cuprum', sans-serif;
+}
+.sidenav ul li a {
+  text-decoration: none;
+  color: #999999;
+}
+.sidenav ul li a:hover {
+  color: #0068b1;
+  text-decoration: none;
+}
 .box {
   margin-bottom: 30px;
 }
@@ -787,6 +808,9 @@ hr {
 .services li p {
   padding-left: 20px;
 }
+.services li a {
+  text-decoration: underline;
+}
 .object-list li {
   overflow: hidden;
   position: relative;
@@ -916,10 +940,11 @@ hr {
 }
 .webcam dt a {
   color: #0068b1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .webcam dt a:hover {
   color: #ef7412;
+  text-decoration: none;
 }
 .webcam dd {
   padding: 0;
@@ -938,6 +963,22 @@ hr {
   margin-right: 10px;
   color: #0068b1;
 }
+.partners {
+  margin-bottom: 20px;
+}
+.partners li {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.partners li .partner-logo {
+  height: 140px;
+}
 .contact-form {
   float: right;
   width: 700px;
@@ -953,14 +994,14 @@ hr {
   width: 600px;
   min-height: 1px;
 }
-.sitemap1 li {
+.sitemap li {
   padding: 3px 0 3px 10px;
   background: url("../img/list-marker.png") 0 8px no-repeat;
 }
-.sitemap1 ul {
+.sitemap ul {
   padding: 5px 0;
 }
-.sitemap1 ul ul {
+.sitemap ul ul {
   margin-left: 20px;
 }
 #map {
@@ -1220,6 +1261,11 @@ blockquote:after {
   font-weight: 400;
   line-height: 44px;
   color: #0068b1;
+}
+.form .error-message {
+  display: block;
+  color: #ef122c;
+  margin-bottom: 10px;
 }
 /* Buttons */
 .btn {

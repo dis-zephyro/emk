@@ -670,6 +670,32 @@ hr {
 	min-height: 1px;
 }
 
+.sidenav {
+	margin-bottom: 30px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			font-size: 20px;
+			margin-bottom: 10px;
+			font-family: @font-head;
+
+			a {
+				text-decoration: none;
+				color: @color-light-gray;
+			}
+
+			a:hover {
+				color: @color-blue;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 .box {
 	margin-bottom: 30px;
 }
@@ -942,6 +968,10 @@ hr {
 		p {
 			padding-left: 20px;
 		}
+
+		a {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -1098,10 +1128,11 @@ hr {
 
 		a {
 			color: @color-blue;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 		a:hover {
 			color: @color-orange;
+			text-decoration: none;
 		}
 	}
 
@@ -1128,6 +1159,25 @@ hr {
 	}
 }
 
+.partners {
+	margin-bottom: 20px;
+
+	li {
+		float: left;
+		width: 50%;
+		padding: 0 20px;
+		font-size: 15px;
+		font-weight: 600;
+		color: @color-dark-gray;
+		text-align: center;
+		margin-bottom: 30px;
+
+		.partner-logo {
+			height: 140px;
+		}
+	}
+}
+
 .contact-form {
 	float: right;
 	width: 700px;
@@ -1145,7 +1195,7 @@ hr {
 	}
 }
 
-.sitemap1 {
+.sitemap {
 
 	li {
 		padding: 3px 0 3px 10px;
@@ -1465,6 +1515,12 @@ blockquote:after {
 		font-weight: 400;
 		line-height: 44px;
 		color: @color-blue;
+	}
+
+	.error-message {
+		display: block;
+		color: #ef122c;
+		margin-bottom: 10px;
 	}
 }
 

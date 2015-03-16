@@ -119,30 +119,19 @@
                     </ul>
                 </div>
                 <aside class="sidebar">
-                    <div class="box">
-                        <h4 class="side-title">Цитаты</h4>
-                        <blockquote>
-                            <p>Измени мышление, и ты изменишь свою жизнь.</p>
-                            <em>Брайан Трейси</em>
-                            <div class="clearfix"></div>
-                        </blockquote>
-                    </div>
-                    <div class="box">
-                        <h4 class="side-title">Навигация</h4>
-                        <p>
-                            <a href="#" class="btn-ellipse btn-login">Вход в личный кабинет</a>
-                        </p>
-                        <p>
-                            <button class="btn-ellipse btn-reg">Регистрация</button>
-                        </p>
-                        <p>
-                            <a class="btn-nav-large prev"></a>
-                            <a class="btn-nav-large next"></a>
-                            <a class="btn-nav-small prev"></a>
-                            <a class="btn-nav-small next"></a>
-                        </p>
-
-                    </div>
+                    <nav class="sidenav">
+                        <ul>
+                            <li><a href="#">Первый раздел</a></li>
+                            <li><a href="#">Второй раздел</a></li>
+                            <li><a href="#">Третий раздел</a></li>
+                            <li><a href="#">Четвертый раздел</a></li>
+                            <li><a href="#">Пятый раздел</a></li>
+                            <li><a href="#">Шестой раздел</a></li>
+                            <li><a href="#">Седьмой раздел</a></li>
+                            <li><a href="#">Восьмой раздел</a></li>
+                            <li><a href="#">Девятый раздел</a></li>
+                        </ul>
+                    </nav>
                 </aside>
             </div>
         </section>
@@ -169,7 +158,6 @@
                 </ul>
             </div>
         </footer>
-
         <div class="hidden">
             <div class="modal-box" id="callback">
                 <div class="modal-title">
@@ -216,7 +204,7 @@
             </div>
             <div class="modal-box" id="enter">
                 <div class="modal-title">
-                    Напишите нам
+                    Вход в личный кабинет
                     <span class="modal-close"></span>
                 </div>
                 <div class="modal-body">
@@ -230,7 +218,9 @@
                             <input type="password" name="pass">
                         </div>
                         <div class="form-group form-horizontal">
+                            <div class="error-message">Логин или пароль указаны неверно. Попробуйте еще раз</div>
                             <a href="#remind-password" class="remind">Напомнить пароль</a>
+
                         </div>
                         <div class="form-inline">
                             <button type="submit" class="btn btn-color">Войти на сайт</button>
